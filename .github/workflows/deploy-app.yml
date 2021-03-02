@@ -26,7 +26,7 @@ jobs:
             docker stop etherbeam_eth_server || true && docker rm etherbeam_eth_server || true
             docker stop etherbeam_server || true && docker rm etherbeam_server || true
             docker stop etherbeam_database || true && docker rm etherbeam_database || true
-            sleep 30s
+            sleep 1m
             cd ${{ env.SERVER_APP_PATH }}
             docker-compose -f docker-compose.production.yml up -d
             cd ${{ env.APP_PATH }}
