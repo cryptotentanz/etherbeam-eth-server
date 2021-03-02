@@ -1,6 +1,7 @@
 name: Deploy app
 env:
   APP_PATH: /var/app/etherbeam/eth-server
+  SERVER_APP_PATH: /var/app/etherbeam/server
   DOCKER_NETWORK: etherbeam-net
 
 on:
@@ -22,12 +23,13 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script_stop: true
           script: |
-            cd ${{ env.APP_PATH }}
             docker stop etherbeam_eth_server || true && docker rm etherbeam_eth_server || true
             docker stop etherbeam_server || true && docker rm etherbeam_server || true
             docker stop etherbeam_database || true && docker rm etherbeam_database || true
+            cd ${{ env.SERVER_APP_PATH }}
             docker-compose -f docker-compose.production.yml up -d
-            install -d -m 770 -o deploy -g user ${{ env.APP_PATH }}/dump
+            cd ${{ env.APP_PATH }}
+            docker-compose -f docker-compose.production.yml up -d
 
       - name: Wait & check Docker containers
         uses: appleboy/ssh-action@master
