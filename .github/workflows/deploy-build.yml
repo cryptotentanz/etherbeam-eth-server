@@ -1,5 +1,6 @@
 name: Deploy build
 env:
+  SERVER_API_HOST: http://server:3000/
   APP_PATH: /var/app/etherbeam/eth-server
 
 on:
