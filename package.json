@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "yarn run build && node --unhandled-rejections=strict dist/index.js | pino-pretty",
     "build": "tsc -p tsconfig.build.json",
-    "start": "yarn run build && node dist/src/index.js",
+    "start": "yarn run build && node dist/index.js",
     "format": "prettier --write .",
     "lint": "eslint --max-warnings 0 --ext js,ts,md .",
     "test": "jest",
