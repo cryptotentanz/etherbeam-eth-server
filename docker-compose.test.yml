@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  eth-server:
+    container_name: etherbeam_eth_server_test
+    build: .
+    environment:
+      - NODE_ENV=test
+    networks:
+      - etherbeam
+
+networks:
+  etherbeam:
+    name: etherbeam-net

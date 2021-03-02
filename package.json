@@ -1,0 +1,59 @@
+{
+  "name": "@cryptotentanz/etherbeam-eth-server",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Ethereum cryptocurrency tracker (Ethereum server side)",
+  "license": "MIT",
+  "bugs": "https://github.com/totentech/api-client/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totentech/api-client.git"
+  },
+  "author": "Benjamin Guibert <contact@bguibert.com>",
+  "files": [
+    "dist/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "yarn run build && node --unhandled-rejections=strict dist/index.js | pino-pretty",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "yarn run build && node dist/src/index.js",
+    "format": "prettier --write .",
+    "lint": "eslint --max-warnings 0 --ext js,ts,md .",
+    "test": "jest",
+    "test:watch": "jest --watch --coverage=false"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/async": "^3.2.5",
+    "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.168",
+    "@types/pino": "^6.3.6",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-md": "^1.0.19",
+    "husky": "^5.1.3",
+    "jest": "^26.6.3",
+    "pino-pretty": "^4.5.0",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.2",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "@ethersproject/contracts": "^5.0.11",
+    "@ethersproject/providers": "^5.0.23",
+    "@ethersproject/solidity": "^5.0.9",
+    "@totentech/api-client": "^0.1.1",
+    "@uniswap/sdk": "^3.0.3",
+    "async": "^3.2.0",
+    "lodash": "^4.17.21",
+    "pino": "^6.11.1",
+    "web3": "^1.3.4"
+  }
+}
