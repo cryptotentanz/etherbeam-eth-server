@@ -825,10 +825,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@totentech/api-client@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@totentech/api-client/-/api-client-0.1.1.tgz#f0a7ca18f7d33a24967b928deb603dc69e286f5d"
-  integrity sha512-3hg6RkSH6lahkYFptM2zaE+Wrh0RzhSgEss0hCqLwgjSh2UvcnIyDDOhlK7ht/qB+Tche01Lk2WVvb/z8HtyTw==
+"@totentech/api-client@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@totentech/api-client/-/api-client-0.1.2.tgz#5bbbdf77d252d7c411478068da1612bb77954ca1"
+  integrity sha512-wSoQ6kuyDaEJ5kvepVLnHVm6rpV/K/SKP9Du/y28rJFbTgOsd4P4pPYZhFWPXZdyMii/P8RAyxeZ5tL/A3sZOA==
   dependencies:
     axios "^0.21.1"
 

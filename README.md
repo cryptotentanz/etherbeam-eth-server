@@ -71,12 +71,13 @@ docker-compose -f docker-compose.production.yml up --build eth-server
 yarn start
 ```
 
-- The server can also just be built (deployed files are located in the `dist`
-  repository):
+- The server can also just be built:
 
 ```bash
 yarn build
 ```
+
+- Deployed files are located in the `dist` repository.
 
 ## Scripts
 
@@ -97,6 +98,7 @@ yarn build
 [Prettier](https://prettier.io) |
 [Jest](https://jestjs.io) |
 [Pino](https://getpino.io/#/) |
+[API client](https://github.com/totentech/api-client) |
 [Web3](https://web3js.readthedocs.io) |
 [Uniswap SDK](https://github.com/Uniswap/uniswap-sdk)
 

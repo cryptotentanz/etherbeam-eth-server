@@ -4,10 +4,10 @@
   "private": false,
   "description": "Ethereum cryptocurrency tracker (Ethereum server side)",
   "license": "MIT",
-  "bugs": "https://github.com/totentech/api-client/issues",
+  "bugs": "https://github.com/cryptotentanz/etherbeam-eth-server/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/totentech/api-client.git"
+    "url": "https://github.com/cryptotentanz/etherbeam-eth-server.git"
   },
   "author": "Benjamin Guibert <contact@bguibert.com>",
   "files": [
@@ -49,7 +49,7 @@
     "@ethersproject/contracts": "^5.0.11",
     "@ethersproject/providers": "^5.0.23",
     "@ethersproject/solidity": "^5.0.9",
-    "@totentech/api-client": "^0.1.1",
+    "@totentech/api-client": "^0.1.2",
     "@uniswap/sdk": "^3.0.3",
     "async": "^3.2.0",
     "lodash": "^4.17.21",
