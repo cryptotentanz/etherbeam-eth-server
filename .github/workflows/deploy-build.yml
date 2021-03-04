@@ -51,3 +51,4 @@ jobs:
           script: |
             cd ${{ env.APP_PATH }}
             docker-compose -f docker-compose.production.yml build eth-server
+            docker image prune -af
