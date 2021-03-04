@@ -38,7 +38,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           source: '*'
           target: '${{ env.APP_PATH }}'
-          rm: false
+          rm: true
 
       - name: Build Docker container
         uses: appleboy/ssh-action@master
